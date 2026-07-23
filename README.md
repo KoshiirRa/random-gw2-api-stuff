@@ -1,8 +1,24 @@
 # Guild Wars 2 WvW Team Lookup (Cloudflare Worker)
 
-A Cloudflare Worker web application and JSON API service that looks up the current World vs World (WvW) Team assignment for any Guild Wars 2 Guild ID.
+A Cloudflare Worker web application and JSON API service that looks up current World vs World (WvW) Team assignments for Guild Wars 2 Guilds.
 
-## 🎯 Target Guild Result
+🌐 **Live Worker Deployment:** [https://gw2-wvw-team-lookup.m-cubed-3.workers.dev](https://gw2-wvw-team-lookup.m-cubed-3.workers.dev)
+
+---
+
+## 🤖 AI Disclosure & Development Notice
+
+This repository was developed with AI pair-programming assistance provided by **Antigravity** (Google DeepMind's AI Coding Assistant).
+
+- **Architecture & Infrastructure**: Serverless Cloudflare Worker implementation, 2-tier caching logic, and 429 rate limit fallbacks.
+- **UI Design**: Modern glassmorphic dark-mode web interface.
+- **Documentation & Testing**: Automated deployment verification, `GEMINI.md`, and `AGENTS.md`.
+
+For full architecture details and AI contribution disclosure, see [GEMINI.md](file:///c:/Users/concentus/Documents/gw2-wvw-team-lookup/GEMINI.md).
+
+---
+
+## 🎯 Target Guild Spotlight
 
 - **Guild ID:** `19B737C3-5B7D-F011-8467-122223FBD123`
 - **Region:** NA (North America)
@@ -18,7 +34,7 @@ A Cloudflare Worker web application and JSON API service that looks up the curre
 Run the Cloudflare Worker locally using Wrangler:
 
 ```bash
-cd gw2-wvw-lookup
+cd gw2-wvw-team-lookup
 npm install
 npm run dev
 ```
@@ -37,7 +53,7 @@ Query parameters:
 
 #### Example Request:
 ```bash
-curl "https://<your-worker>.workers.dev/api/lookup?guild_id=19B737C3-5B7D-F011-8467-122223FBD123&region=na"
+curl "https://gw2-wvw-team-lookup.m-cubed-3.workers.dev/api/lookup?guild_id=19B737C3-5B7D-F011-8467-122223FBD123&region=na"
 ```
 
 #### Response:
@@ -63,6 +79,8 @@ npx wrangler deploy
 
 ---
 
-## 🛠️ Data Sources & Endpoints
+## 🛠️ Data Sources & Documentation
 - **GW2 API WvW Guilds Endpoint:** `https://api.guildwars2.com/v2/wvw/guilds/na`
 - **GW2 Wiki Team Specifications:** `https://wiki.guildwars2.com/wiki/API:2/wvw/guilds/:region`
+- **Agent Directives:** [AGENTS.md](file:///c:/Users/concentus/Documents/gw2-wvw-team-lookup/AGENTS.md)
+- **System Architecture & AI Disclosure:** [GEMINI.md](file:///c:/Users/concentus/Documents/gw2-wvw-team-lookup/GEMINI.md)
