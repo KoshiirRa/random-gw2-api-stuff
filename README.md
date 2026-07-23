@@ -2,7 +2,7 @@
 
 A Cloudflare Worker web application and JSON API service that looks up current World vs World (WvW) Team assignments for Guild Wars 2 Guilds.
 
-🌐 **Live Worker Deployment:** [https://gw2-wvw-team-lookup.m-cubed-3.workers.dev](https://gw2-wvw-team-lookup.m-cubed-3.workers.dev)
+🌐 **Live Worker Deployment:** [https://slpy-wvw.dwavenbard.com](https://slpy-wvw.dwavenbard.com)
 
 ---
 
@@ -10,7 +10,7 @@ A Cloudflare Worker web application and JSON API service that looks up current W
 
 This repository was developed with AI pair-programming assistance provided by **Antigravity** (Google DeepMind's AI Coding Assistant).
 
-- **Architecture & Infrastructure**: Serverless Cloudflare Worker implementation, 2-tier caching logic, and 429 rate limit fallbacks.
+- **Architecture & Infrastructure**: Serverless Cloudflare Worker implementation, 2-tier caching logic, custom domain setup, and 429 rate limit fallbacks.
 - **UI Design**: Modern glassmorphic dark-mode web interface.
 - **Documentation & Testing**: Automated deployment verification, `GEMINI.md`, and `AGENTS.md`.
 
@@ -53,7 +53,7 @@ Query parameters:
 
 #### Example Request:
 ```bash
-curl "https://gw2-wvw-team-lookup.m-cubed-3.workers.dev/api/lookup?guild_id=19B737C3-5B7D-F011-8467-122223FBD123&region=na"
+curl "https://slpy-wvw.dwavenbard.com/api/lookup?guild_id=19B737C3-5B7D-F011-8467-122223FBD123&region=na"
 ```
 
 #### Response:

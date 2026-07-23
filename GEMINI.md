@@ -57,6 +57,11 @@ This project was built with pair-programming assistance from **Antigravity** (Go
 | `guild_id` | string | No | `19B737C3-5B7D-F011-8467-122223FBD123` | Target GW2 Guild UUID string |
 | `region` | string | No | `na` | Matchmaking region (`na` or `eu`) |
 
+#### Example Request:
+```bash
+curl "https://slpy-wvw.dwavenbard.com/api/lookup?guild_id=19B737C3-5B7D-F011-8467-122223FBD123&region=na"
+```
+
 #### Successful Response (`200 OK`):
 ```json
 {

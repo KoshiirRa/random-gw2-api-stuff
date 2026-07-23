@@ -3,6 +3,13 @@
   "name": "gw2-wvw-team-lookup",
   "main": "src/index.js",
   "compatibility_date": "2026-07-01",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "slpy-wvw.dwavenbard.com",
+      "custom_domain": true
+    }
+  ],
   "observability": {
     "enabled": true
   }
