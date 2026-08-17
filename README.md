@@ -2,7 +2,7 @@
 
 A Cloudflare Worker web application and JSON API service that looks up current World vs World (WvW) Team assignments for Guild Wars 2 Guilds.
 
-🌐 **Live Worker Deployment:** [https://slpy-wvw.dwavenbard.com](https://slpy-wvw.dwavenbard.com)
+🌐 **Live Worker Deployment:** [https://slpy-wvw.dwarvenbard.com](https://slpy-wvw.dwarvenbard.com)
 
 ---
 
